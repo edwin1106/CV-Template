@@ -1,0 +1,104 @@
+
+*, ::after, ::before {
+  box-sizing: border-box; 
+}
+body, html {
+  display: block;
+}
+div{
+  display: block;
+  width: 100%;
+}
+body, html, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+.container{
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+hr{
+  margin-top: 5px;
+  border:1px solid darkgray;
+}
+.photo-container{
+  text-align: center;
+}
+.photo-container > img{
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+.col-left{
+  max-width: 33%;
+  padding: 0 40px 40px 40px;
+  border-right-style: solid;
+  border-right-color: gray;
+}
+.col-left h2{
+  text-align: center;
+}
+.col-rigth{
+  padding: 0 40px 0 40px;
+}
+.content > p{
+  justify-content: start;
+}
+.desc-container{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.desc-container > h4{
+  margin-bottom: 0;
+}
+.contact-container{
+  text-align: center;
+}
+.icon-container{
+  display: flex;
+}
+.half-container{
+  text-align: center;
+  display: flex;
+}
+.profile-container{
+  margin-bottom: 60px;
+}
+.exp-container{
+  margin-bottom: 40px;
+}
+.projects-container{
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 991px){
+  .container{
+    padding-bottom: 10px;
+    flex-direction: column;
+  }
+  .photo-container > img{
+    max-width: 25%;
+  }
+  .col-left{
+    max-width: 100%;
+    border-right-style: unset;
+    padding:20px;
+  }
+  .col-rigth{
+    padding:20px;
+  }
+  .icon-container{
+    flex-direction: column;
+  }
+  .half-container{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .photo-container > img{
+    max-width: 50%;
+  }
+}
+
